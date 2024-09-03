@@ -16,6 +16,10 @@ export const StyledLanding = styled(Section)`
     align-items: center;
   }
 
+  .img-container {
+    background: url("/spaniel_gradient.png");
+  }
+
   @media (max-width: 1024px) {
     .img-container {
       display: none;

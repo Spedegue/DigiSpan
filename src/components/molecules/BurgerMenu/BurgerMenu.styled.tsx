@@ -10,6 +10,7 @@ export const StyledBurgerMenu = styled(motion.div)`
   min-width: 50vw;
   padding: 24px;
   background: ${({ theme }) => theme.color.background};
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 8px;
 
   > ul {
     flex-direction: column;

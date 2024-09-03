@@ -19,11 +19,7 @@ export const StyledProjectTile = styled(motion.div)<{
     }
   }
 
-  @media (max-width: 450px) {
-    width: 75vw;
-    aspect-ratio: 1;
-    //font-size: 1rem;
-
+  @media (max-width: 1024px) {
     h5 {
       font-size: 2rem;
     }
@@ -31,6 +27,11 @@ export const StyledProjectTile = styled(motion.div)<{
     p {
       font-size: 1.4rem;
     }
+  }
+
+  @media (max-width: 450px) {
+    width: 75vw;
+    aspect-ratio: 1;
   }
 `;
 
@@ -43,7 +44,7 @@ export const TileOverlay = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   color: ${({ theme }) => theme.color.onPrimary};
-  padding: 36px;
+  padding: 10%;
   * {
     font-weight: normal;
   }

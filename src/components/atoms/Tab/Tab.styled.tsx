@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const StyledTab = styled.div<{ isSelected?: boolean }>`
-  width: 190px;
+  width: 25%;
   font-size: 2rem;
   padding: 6px;
   display: flex;
@@ -12,6 +12,7 @@ export const StyledTab = styled.div<{ isSelected?: boolean }>`
   font-weight: ${({ isSelected }) => (isSelected ? "bold" : "normal")};
   transition: scale 0.2s ease-in-out;
   user-select: none;
+  position: relative;
 
   :hover {
     scale: 1.05;
@@ -19,10 +20,8 @@ export const StyledTab = styled.div<{ isSelected?: boolean }>`
 
   @media (max-width: 970px) {
     font-size: 1.6rem;
-    width: 130px;
   }
   @media (max-width: 640px) {
     font-size: 1.4rem;
-    width: 80px;
   }
 `;

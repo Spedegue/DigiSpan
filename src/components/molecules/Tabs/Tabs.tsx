@@ -17,7 +17,6 @@ function Tabs({ selectedTab, setSelectedTab, tabs }: TabsProps) {
           onClick={() => setSelectedTab(tab.title as ProjectCategory)}
         />
       ))}
-      <TabUnderline selectedIndex={selectedIndex} />
     </StyledTabs>
   );
 }

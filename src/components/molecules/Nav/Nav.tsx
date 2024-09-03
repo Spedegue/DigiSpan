@@ -34,6 +34,7 @@ function Nav(props: NavProps) {
   };
 
   useEffect(() => {
+    // useEffect will only run in browser, so when this is set to true we know it is not being rendered on the server
     setIsClient(true);
   }, []);
 
@@ -45,6 +46,7 @@ function Nav(props: NavProps) {
     };
   }, [onScroll]);
 
+  // We can only run this on the client as useWindowSize will break when used with SSR
   if (!isClient) return null;
 
   return (

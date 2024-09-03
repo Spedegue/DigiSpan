@@ -15,12 +15,12 @@ export default function Home() {
         <title>Digital Spaniel</title>
         <meta name="description" content="Digital Spaniel homepage" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/*  TODO Add Favicon?*/}
       </Head>
       <Page>
         <Landing />
         <Services />
         <Projects />
+        {/*  This is unfinished so I've commented it out*/}
         {/*<Testimonials />*/}
       </Page>
     </>

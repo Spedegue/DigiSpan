@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { StyledLanding } from "./Landing.styled";
 import { LandingProps } from "./Landing.types";
 import Image from "next/image";
-import SpanielImage from "../../../assets/images/spaniel_gradient.png";
+import SpanielImage from "../../../../public/spaniel_gradient.png";
 import SectionHeader from "@/components/atoms/SectionHeader/SectionHeader";
 import Link from "@/components/atoms/Link/Link";
 import SectionInfo from "@/layouts/SectionInfo";
@@ -51,9 +51,7 @@ function Landing(props: LandingProps) {
           <Link href={"/"} label={`Let's talk`} />
         </SectionInfo>
       </div>
-      <div className={"img-container"} ref={ref}>
-        <Image src={SpanielImage} alt={""} fill={true} />
-      </div>
+      <div className={"img-container"} ref={ref} />
     </StyledLanding>
   );
 }
