@@ -35,6 +35,7 @@ export const StyledNav = styled.nav<{ hide: boolean; hideBackground: boolean }>`
     }
 
     background: ${({ theme }) => theme.color.background};
-    color: ${({ theme }) => theme.color.onBackgroundAlt} !important;
+    color: ${({ theme }) => theme.color.onBackgroundAlt};
+    border-bottom: 1px solid ${({ theme }) => theme.color.primary50};
   }
 `;

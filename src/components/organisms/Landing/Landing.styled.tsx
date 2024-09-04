@@ -17,7 +17,8 @@ export const StyledLanding = styled(Section)`
   }
 
   .img-container {
-    background: url("/spaniel_gradient.png");
+    background-image: url("/spaniel_gradient.png");
+    background-size: cover;
   }
 
   @media (max-width: 1024px) {

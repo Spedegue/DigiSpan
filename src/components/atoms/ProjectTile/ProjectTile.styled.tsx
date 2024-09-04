@@ -10,6 +10,8 @@ export const StyledProjectTile = styled(motion.div)<{
   position: relative;
   border-radius: 5px;
   overflow: hidden;
+  container-type: inline-size;
+
   img {
     transition: scale 0.5s ease-in-out;
   }
@@ -45,6 +47,7 @@ export const TileOverlay = styled.div`
   justify-content: flex-end;
   color: ${({ theme }) => theme.color.onPrimary};
   padding: 10%;
+
   * {
     font-weight: normal;
   }
@@ -62,7 +65,7 @@ export const TileOverlay = styled.div`
 
   span {
     font-size: 2rem;
-    margin-top: 32px;
+    margin-top: 10%;
     :after {
       height: 2px;
       width: 100%;
@@ -70,6 +73,28 @@ export const TileOverlay = styled.div`
 
     :hover {
       color: ${({ theme }) => theme.color.secondary};
+    }
+  }
+
+  @container (max-width: 280px) {
+    padding: 8px;
+    h5 {
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    span {
+      font-size: 1.2rem;
+
+      :after {
+        height: 2px;
+        width: 100%;
+      }
     }
   }
 `;
